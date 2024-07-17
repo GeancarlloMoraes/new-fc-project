@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'EAFC';
+    src: url('/font/EASPORTS15.ttf') format('TrueType');
+    font-weight: normal;
+    
+}
+
+
+:root {
+    --cor1: #FFFFFF;
+    --cor2: #000000;
+    --cor3: #252525;
+    --cor4: #00000044;
+    --cor5: #07F468;
+
+    --font-destaque: 'EAFC', sans-serif ;
+}
+
+header, header img {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    max-width: 380px;
+}
+header {
+    background-color: var(--cor1);
+}
+
+h1 {
+    font-family: var(--font-destaque);
+    font-style: italic;
+    font-size: 3em;
+    font-weight: normal;
+    
+}
+
+header p {
+    
+    font-weight: normal;
+    font-size: 1.2em;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.267);
+}
+
+nav{
+    background-color: var(--cor1);
+    padding: 10px;
+    box-shadow: 0px 3px 3px  rgba(0, 0, 0, 0.192);
+    border-radius: 5px;
+}
+
+nav > a {
+    color: var(--cor2);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor5);
+    border-radius: 5px;
+
+}
+
+main {
+    min-width: 380px ;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+body {
+    background-color: var(--cor1);
+}
+article {
+    background-color: var(--cor1);
+    padding: 10px;
+    margin: -10px -20px 0px -20px;
+
+}
+
+article h1 {
+    padding: 0px;
+    background-image: linear-gradient(to right, var(--cor5), transparent);
+    margin: -10px -10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+article h2 {
+    font-family: var(--font-destaque);
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2em;
+    margin: -10px 0px;
+}
+
+article p {
+    text-align: justify;
+    font-size: 1.2em;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.267);
+}
+
+div.video {
+    background-color: var(--cor2);
+    
+    margin: 0px -20px 0px -20px;
+    padding: 20px ;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top:5% ;
+    left:5% ;
+    width: 90%;
+    height: 90%;
+}
+
+main {
+    background-color: var(--cor3);
+    padding-top: 10px;
+
+}
+
+section h3 {
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    color: var(--cor5);
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 5px;
+
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+
+}
+form button {
+    background-color: var(--cor5);
+    color: var(--cor2);
+    border: none;
+    cursor: pointer;
+    width: 340px;
+}
+
+form button:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+footer {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    padding: 20px;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.342);
+    margin: 0 -18px ;
+}
+
+aside > h3 {
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    background-color: var(--cor5);
+    color: var(--cor2);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside p {
+    font-size: 1.2em;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.267);
+}
+
+aside > ul {
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+    font-size: 1.2em;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.267);
+}
+
+footer > p {
+    text-align: center;
+}
+
+footer > p > strong {
+    color: var(--cor5);
+}
